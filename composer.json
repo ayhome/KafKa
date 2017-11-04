@@ -1,7 +1,8 @@
 {
     "name": "ayhome/kafka",
-    "description": "kafka-php-lite",
+    "description": "kafka-php",
     "type": "library",
+    "license": "Apache-2.0",
     "authors": [
         {
             "name": "ayhome",

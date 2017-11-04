@@ -13,7 +13,7 @@ class Producer {
      * @param $Topic
      */
     public function __construct($BrokerList, $KafKaConf, $TopicConf, $Topic) {
-        $rk = new RdKafka\Producer($KafKaConf);
+        $rk = new \RdKafka\Producer($KafKaConf);
         $rk->addBrokers($BrokerList);
         $this->topic = $rk->newTopic($Topic,$TopicConf);
     }
