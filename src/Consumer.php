@@ -68,20 +68,19 @@ class Consumer {
   public function consume() {
       $message = $this->topic->consume($this->partition, $this->timeout * 1000);
 
-if (empty($message)) {
-    return null;
-}
-
+      if (empty($message)) {
+          return null;
+      }
       switch ($message->err) {
-          case RD_KAFKA_RESP_ERR_NO_ERROR:
-              return $message;
-              break;
-          case RD_KAFKA_RESP_ERR__PARTITION_EOF:
-              return null;
-              break;
-          default:
-              throw new KafKa_Exception_Base($message->errstr(), $message->err);
-              break;
+        case RD_KAFKA_RESP_ERR_NO_ERROR:
+          return $message;
+          break;
+        case RD_KAFKA_RESP_ERR__PARTITION_EOF:
+          return null;
+          break;
+        default:
+          throw new \Exception($message->errstr(), $message->err);
+          break;
       }
   }
 
