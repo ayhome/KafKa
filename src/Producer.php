@@ -1,5 +1,5 @@
 <?php
-namespace ayhome\KafKa;
+namespace ayhome\kafka;
 class Producer {
 
     protected $topic = null;

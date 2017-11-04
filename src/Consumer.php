@@ -1,5 +1,5 @@
 <?php
-namespace ayhome\KafKa;
+namespace ayhome\kafka;
 
 // 通过offset和group来获取消息(必须设置group)
 const KAFKA_OFFSET_STORED = RD_KAFKA_OFFSET_STORED;
