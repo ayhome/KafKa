@@ -1,31 +1,10 @@
 <?php
-// Copyright 2016 The See-KafKa Authors. All rights reserved.
-//
-// Licensed under the Apache License, Version 2.0 (the "License"): you may
-// not use this file except in compliance with the License. You may obtain
-// a copy of the License at
-//
-//     http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
-// WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
-// License for the specific language governing permissions and limitations
-// under the License.
-
-/**
- * KafKa拓展类
- * @author : @喵了个咪<wenzhenxi@vip.qq.com>
- * 依赖PHP-C拓展:https://github.com/arnaud-lb/php-rdkafka
- * 依赖服务底层:https://github.com/edenhill/librdkafka
- * setKafkaConf和setTopicConf配置说明地址:
- * https://github.com/edenhill/librdkafka/blob/master/CONFIGURATION.md
- */
+namespace ayhome\KafKa;
 
 // KafKa分区自动随机分配
 const KAFKA_PARTITION_UA = RD_KAFKA_PARTITION_UA;
 
-class KafKa_Lite {
+class KafKa {
 
     // KafKaHostList
     protected $BrokerList = array();

@@ -1,0 +1,12 @@
+{
+    "name": "ayhome/kafka",
+    "description": "kafka-php-lite",
+    "type": "library",
+    "authors": [
+        {
+            "name": "ayhome",
+            "email": "ayhome@foxmail.com"
+        }
+    ],
+    "require": {}
+}
